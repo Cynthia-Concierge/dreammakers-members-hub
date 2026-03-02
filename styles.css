@@ -135,6 +135,68 @@ footer a:hover {
     color: #999;
 }
 
+.calendar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.calendar-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn-secondary:hover {
+    background: #f0f4ff;
+}
+
+.calendar-embed {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.calendar-embed.hidden {
+    display: none;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.btn-close {
+    background: #dc3545;
+    padding: 10px 24px;
+}
+
+.btn-close:hover {
+    background: #c82333;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -150,5 +212,19 @@ footer a:hover {
 
     .resources-grid {
         grid-template-columns: 1fr;
+    }
+
+    .calendar-embed {
+        padding: 20px;
+        margin: 0 20px 20px;
+    }
+
+    .calendar-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .calendar-embed iframe {
+        height: 500px;
     }
 }
