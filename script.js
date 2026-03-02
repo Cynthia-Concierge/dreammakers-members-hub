@@ -11,16 +11,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.whatsapp-link').href = links.whatsapp;
     document.querySelector('.replays-link').href = links.replays;
 });
-
-// Toggle calendar embed visibility
-function toggleCalendar() {
-    const calendarEmbed = document.getElementById('calendar-embed');
-    calendarEmbed.classList.toggle('hidden');
-
-    // Scroll to calendar when opening
-    if (!calendarEmbed.classList.contains('hidden')) {
-        setTimeout(() => {
-            calendarEmbed.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
-    }
-}

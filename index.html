@@ -25,10 +25,7 @@
                 <div class="icon">📅</div>
                 <h2>Events Calendar</h2>
                 <p>View upcoming calls, workshops, and community events</p>
-                <div class="calendar-buttons">
-                    <a href="https://calendar.google.com/calendar/u/0?cid=c_2a32074bdc3b3b5dd2b50996b3f81dda49c47357f80da5db45df3955b6db664f@group.calendar.google.com" class="btn" target="_blank">Add to Your Calendar</a>
-                    <button class="btn btn-secondary" onclick="toggleCalendar()">View Embedded</button>
-                </div>
+                <a href="https://calendar.google.com/calendar/u/0?cid=c_2a32074bdc3b3b5dd2b50996b3f81dda49c47357f80da5db45df3955b6db664f@group.calendar.google.com" class="btn" target="_blank">Add to Your Calendar</a>
             </div>
 
             <div class="resource-card">
@@ -53,11 +50,10 @@
             </div>
         </main>
 
-        <!-- Embedded Calendar (hidden by default) -->
-        <div id="calendar-embed" class="calendar-embed hidden">
+        <!-- Embedded Calendar -->
+        <div id="calendar-embed" class="calendar-embed">
             <div class="calendar-header">
                 <h2>DreamMakers Events Calendar</h2>
-                <button class="btn btn-close" onclick="toggleCalendar()">Close</button>
             </div>
             <iframe src="https://calendar.google.com/calendar/embed?src=c_2a32074bdc3b3b5dd2b50996b3f81dda49c47357f80da5db45df3955b6db664f%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
