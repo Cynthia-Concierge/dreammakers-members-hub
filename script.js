@@ -1,8 +1,8 @@
-// Placeholder links - update these with actual URLs
+// Actual member resource links
 const links = {
-    bootcamp: 'https://bootcamp.dreammakershq.com',
-    whatsapp: 'https://chat.whatsapp.com/YOUR_GROUP_INVITE',
-    replays: 'https://replays.dreammakershq.com'
+    bootcamp: 'http://learn.dreammakershq.com',
+    whatsapp: 'https://chat.whatsapp.com/KQs4r4hDWlo7NnQ2px3nJC?mode=hqctshi',
+    replays: 'https://drive.google.com/drive/folders/1ZwAIf0S_rjXhaEFzv58VmmfKs1IwNsqj?usp=sharing'
 };
 
 // Update links when page loads
