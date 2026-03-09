@@ -6,59 +6,59 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #f5f7fa;
     min-height: 100vh;
-    padding: 20px;
     color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.95;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-
-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-.subtitle {
-    font-size: 1.3rem;
-    opacity: 0.95;
-    font-weight: 300;
+    padding: 0 20px;
 }
 
 main {
-    padding: 60px 40px;
+    padding: 60px 0;
 }
 
 .resources-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
 }
 
 .resource-card {
     background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 16px;
-    padding: 30px;
+    border: 1px solid #e8ecf1;
+    border-radius: 12px;
+    padding: 35px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .resource-card:hover {
@@ -108,11 +108,36 @@ main {
     font-style: italic;
 }
 
-footer {
-    background: #f8f9fa;
+/* Calendar Section */
+.calendar-section {
+    margin: 60px 0;
+}
+
+.calendar-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
     text-align: center;
-    padding: 30px 20px;
-    border-top: 1px solid #e0e0e0;
+}
+
+.calendar-embed {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid #e8ecf1;
+}
+
+.calendar-embed iframe {
+    border-radius: 8px;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #e8ecf1;
 }
 
 footer p {
@@ -135,48 +160,34 @@ footer a:hover {
     color: #999;
 }
 
-.calendar-embed {
-    max-width: 1200px;
-    margin: 0 auto 40px;
-    padding: 40px;
-}
-
-.calendar-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.calendar-header h2 {
-    font-size: 2rem;
-    color: #333;
-    margin: 0;
-}
-
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .subtitle {
-        font-size: 1.1rem;
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 60px 20px;
     }
 
     main {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 
     .resources-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .calendar-section h2 {
+        font-size: 2rem;
     }
 
     .calendar-embed {
-        padding: 20px;
-        margin: 0 20px 20px;
-    }
-
-    .calendar-header {
-        flex-direction: column;
-        text-align: center;
+        padding: 10px;
     }
 
     .calendar-embed iframe {
